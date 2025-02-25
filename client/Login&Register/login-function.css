@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+html,
+body {
+  height: 100%;
+  font-family:  "IBM Plex Mono", serif;
+}
+body {
+  background: hsl(0, 0%, 99%);
+}
+
+
+/*--------------------
+Buttons
+--------------------*/
+.btn {
+  display: block;
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0, 100);
+  text-decoration: none;
+  margin: 20px 0;
+  font-weight: 500;
+  padding: 15px 15px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #101010;
+  box-shadow: 2px 4px 12px #00000014;
+  min-width: 170px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  &:hover::after {
+    background: hsla(0, 0, 0, 0.1);
+  }
+  
+} 
+.btn-social {
+  padding-left: 64px;
+  position: relative;
+  z-index: 1;
+  
+  .fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    background: hsla(0, 0, 0, 0.1);
+    line-height: 3.2;
+    border-radius: 5px 0 0 5px;
+  }
+  
+}
+.btn-microsoft {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.btn-google {
+  background-color: hsl(0, 0%, 100%); 
+  margin-bottom: 15px;
+}
+
+
+
+/*--------------------
+Form
+--------------------*/
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 12px); /* Account for padding and border */
+    padding: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 10px;
+    background-color: #78c17b; /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.btn-signin:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/*--------------------
+Signup
+--------------------*/
+.signup {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: hsl(0, 0, 100);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 2px 4px 12px #00000014
+}
+
+.signup-connect::before{
+    filter: blur(1.5em);
+}
+.signup-connect
+{
+  width: 100%;
+  padding: 30px 50px;
+}
+
+.signup-connect {
+    background-color: #ffffff;
+ 
+  h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
+  }
+  
+}
+

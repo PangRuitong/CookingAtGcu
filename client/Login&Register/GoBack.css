@@ -1,0 +1,18 @@
+/*
+button go back to sign in from register
+*/
+.btn-back-signin {
+    display: inline-block; /* Makes the button behave like an inline element */
+    padding: 10px 20px; /* Adds padding around the text */
+    text-decoration: none; /* Removes underlines from the link */
+    border: none; /* Removes default button border */
+    background-color: transparent; /* Makes the background transparent */
+    border-radius: 5px; /* Adds rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-family: sans-serif; /* Use a standard font */
+  }
+  
+  .btn-back-signin:hover {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3); /* Slightly darker shadow on hover */
+  }

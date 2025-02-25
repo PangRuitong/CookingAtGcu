@@ -1,0 +1,15 @@
+.container{
+    height: 100vh;
+    margin:10px 60px;
+    display: flex;
+}
+
+.plantBagelCard{
+    background-color: rgb(244, 244, 244);
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    box-shadow: 2px 4px 2px #00000014;
+    border-radius: 3px;
+
+}

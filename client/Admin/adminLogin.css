@@ -1,0 +1,31 @@
+.container{
+    width: 300px;
+    margin: 100px auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.admin-signin{
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-signin h2 {
+    text-align: center;
+}
+
+.admin-signin button {
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.admin-signin input{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}

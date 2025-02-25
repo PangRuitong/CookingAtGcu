@@ -1,0 +1,31 @@
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hover-box1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+} 
+.hover-box1 {
+    width: 200px; /* Initial width */
+    height: 300px;
+    background-color: #f2f2f2;
+    padding: 0px;
+    border: 1px solid #ddd;
+    transition: all 1s ease-in-out;
+    position: relative; /* Change to relative positioning */
+    margin: 20px;
+}
+.hover-box1:hover {
+    width: 250px; /* Expanded width */
+    padding-right: 0px; /* Increased right padding */
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
