@@ -6,6 +6,7 @@
     <title>Login</title>
   <link rel="stylesheet" href="/client/Login&Register/login.css">
     <link rel="stylesheet" href="/client/Login&Register/login-function.css">
+    
 
 </head>
 <body>
@@ -28,7 +29,7 @@
                     <a href="/client/Login&Register/reset-password.html">Forget the Password</a>
 
                   <a href="#" class="btn btn-social btn-microsoft"><i class="fa fa-microsoft"></i> Sign in with Microsoft</a>
-                  <a href="#" class="btn btn-social btn-google"><i class="fa fa-google"></i> Sign in with Google</a>
+                  <a href="#" id="googleSignInButton" class="btn btn-social btn-google"><i class="fa fa-google"></i> Sign in with Google</a>
                   <a href="/client/Login&Register/register.html">Don't have an account? Register here</a>
                   <br><br>
                   <a href="/client/MainPage/home.html">Contoine as Guest</a>
@@ -36,5 +37,8 @@
               </div>
         </div>
     </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="/client/Login&Register/signin-google.js"></script>
 </body>
 </html>
