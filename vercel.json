@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "client/Admin/admin.html",
+        "src": "client/Admin/adminLogin.html",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
         "src": "/admin",
-        "dest": "/client/Admin/admin.html"
+        "dest": "/client/Admin/adminLogin.html"
       }
     ]
   }
