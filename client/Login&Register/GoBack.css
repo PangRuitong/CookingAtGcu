@@ -11,6 +11,7 @@ button go back to sign in from register
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
     cursor: pointer; /* Changes the cursor to a pointer on hover */
     font-family: sans-serif; /* Use a standard font */
+    margin-top: 20px;
   }
   
   .btn-back-signin:hover {
