@@ -1,6 +1,6 @@
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
-    fetch('/your_login_endpoint', {
+    fetch('http://18.116.67.70:5168/api/auth/google-login', { // Calls ASP.NET backend
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -9,7 +9,12 @@ function handleCredentialResponse(response) {
     })
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        console.log("Google Sign-In Response:", data);
+        if (data.user) {
+            alert("Login Successful: " + data.user.FullName);
+        } else {
+            alert("Login Failed: " + data.error);
+        }
     })
     .catch((error) => {
         console.error('Error:', error);
@@ -25,4 +30,4 @@ window.onload = function () {
     document.getElementById("googleSignInButton").addEventListener("click", function() {
         google.accounts.id.prompt();
     });
-}
+};
