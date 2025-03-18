@@ -1,6 +1,6 @@
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
-    fetch('http://18.116.67.70:5168/api/auth/google-login', { // Calls ASP.NET backend
+    fetch('https://api.gotcookedatgcu.com/api/auth/google-login', { // Calls ASP.NET backend
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -48,7 +48,8 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
     try {
         // Make a POST request to backend login endpoint
-        const response = await fetch('http://18.116.67.70:5168/api/auth/login', {
+        const response = await fetch('https://api.gotcookedatgcu.com/api/auth/login'
+, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password }) // Send as JSON
