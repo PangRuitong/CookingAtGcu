@@ -66,7 +66,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
             alert("Login Successful!");
 
             // OPTIONAL: Redirect to dashboard or home page
-            window.location.href = '../MainPage/home.html'; // Adjust to your actual dashboard page
+            window.location.href = '/client/MainPage/home.html'; // Adjust to your actual dashboard page
 
         } else {
             // Handle invalid credentials
