@@ -13,7 +13,7 @@ function handleCredentialResponse(response) {
         if (data.user) {
             alert("Login Successful: " + data.user.FullName);
 
-            window.location.href = '../MainPage/home.html'; // redirect to home page
+            window.location.href = '/client/MainPage/home.html'; // redirect to home page
 
         } else {
             alert("Login Failed: " + data.error);
