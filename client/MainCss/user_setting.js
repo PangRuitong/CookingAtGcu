@@ -6,6 +6,7 @@ document.getElementById('settingsLink').addEventListener('click', function (even
     if (!token) {
         // Show an alert if the user is not signed in
         alert("You need to sign in first to access settings!");
+        window.location.href = "../Login&Register/register.html";
         return;
     }
 
