@@ -61,6 +61,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
             console.log('Login Successful:', data);
 
             // Store JWT token in localStorage for future authenticated requests
+            // stored at brower
             localStorage.setItem('jwtToken', data.token);
 
             alert("Login Successful!");
